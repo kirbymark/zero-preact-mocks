@@ -5,11 +5,15 @@ import Drawer from 'preact-material-components/Drawer';
 import List from 'preact-material-components/List';
 import Dialog from 'preact-material-components/Dialog';
 import Switch from 'preact-material-components/Switch';
+
+//import logo from './assets/images/logo-nclh-shield-solid-white.svg';
+
 import 'preact-material-components/Switch/style.css';
 import 'preact-material-components/Dialog/style.css';
 import 'preact-material-components/Drawer/style.css';
 import 'preact-material-components/List/style.css';
 import 'preact-material-components/TopAppBar/style.css';
+
 // import style from './style';
 
 export default class Header extends Component {
@@ -34,6 +38,7 @@ export default class Header extends Component {
 
 	goHome = this.linkTo('/');
 	goToMyProfile = this.linkTo('/profile');
+	goToOne = this.linkTo('/one');
 
 	toggleDarkTheme = () => {
 		this.setState(
@@ -73,6 +78,10 @@ export default class Header extends Component {
 						<Drawer.DrawerItem selected={props.selectedRoute === '/'} onClick={this.goHome}>
 							<List.ItemGraphic>home</List.ItemGraphic>
 							Home
+						</Drawer.DrawerItem>
+						<Drawer.DrawerItem selected={props.selectedRoute === '/profile'} onClick={this.goToOne}>
+							<List.ItemGraphic>chevron_right</List.ItemGraphic>
+							One
 						</Drawer.DrawerItem>
 						<Drawer.DrawerItem selected={props.selectedRoute === '/profile'} onClick={this.goToMyProfile}>
 							<List.ItemGraphic>account_circle</List.ItemGraphic>

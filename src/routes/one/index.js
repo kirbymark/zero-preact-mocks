@@ -4,18 +4,18 @@ import 'preact-material-components/Card/style.css';
 import 'preact-material-components/Button/style.css';
 import style from './style';
 
-export default class Home extends Component {
+export default class One extends Component {
 	render() {
 		return (
-			<div class={`${style.home} page`}>
-				<h1>Home Page</h1>
+			<div class={`${style.one} page`}>
+				<h4>Page One</h4>
 				<Card>
 					<div class={style.cardHeader}>
-						<h2 class=" mdc-typography--title">Home card</h2>
-						<div class=" mdc-typography--caption">Welcome to Mocks</div>
+						<h2 class=" mdc-typography--title">One Card</h2>
+						<div class=" mdc-typography--caption">Welcome to Mock one</div>
 					</div>
 					<div class={style.cardBody}>
-						This is simply some text
+						This is simply some text for mock one
 					</div>
 					<Card.Actions>
 						<Card.ActionButton>OKAY</Card.ActionButton>
