@@ -1,11 +1,11 @@
 {
-  "name": "my-project",
-  "short_name": "my-project",
+  "name": "preact-mocks",
+  "short_name": "preact-mocks",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "theme_color": "#0d6efd",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",
